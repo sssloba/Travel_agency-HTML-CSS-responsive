@@ -1,0 +1,324 @@
+/* GENERAL */
+
+* {
+	font-family: 'Montserrat', sans-serif;
+	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	font-size: 18px;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+	content: '';
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+header {
+	background-color: #eee;
+	position: fixed;
+	display: block;
+	width: 100%;
+	z-index: 20;
+}
+
+nav img {
+	position: absolute;
+	width:80px;
+	display: inline-block;
+}
+
+.hamburger {
+	right: 3%;
+    top: 0%;
+    display: none;
+}
+
+.desno {
+	/*float: right;
+	display: inline-block;*/
+	display: flex;
+
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+
+nav > ul > li {
+	/*float: left;*/
+	padding: 30px 20px;
+	
+}
+
+.submenu {
+	position: absolute;
+}
+
+.submenu li {
+	background-color: #eee;
+	width: 200px;
+	
+	visibility: hidden;
+}
+
+
+.desno li:hover .submenu li{
+	visibility: visible;
+
+}
+
+
+
+
+.main-banner {
+	position: relative;
+	display: block;
+	width: 100%;
+	top: 82px;
+	z-index: 5;
+}
+
+h1 {
+	position: relative;
+	top: 82px;
+    color: #cc2a7c;
+    margin: 0 auto;
+    z-index: 10;
+    font-weight: bold;
+    font-size: 70px;
+    text-align: center;
+    background-color: lightblue;
+
+}
+
+
+
+
+.position {
+	/*display: block;
+	position: relative;
+	top: 82px;*/
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 82px;
+	background-color: lightgreen;
+	
+}
+
+
+li {
+	display: inline-block;
+	padding: 5px;
+
+}
+
+
+
+body ul div li {
+	position: relative;
+	margin: 30px 63px;
+
+}
+
+/*
+body ul div li div {
+
+	text-align: center;
+}
+*/
+
+.destination {
+	display: inline;
+	position: absolute;
+	top: 130px;
+	left: 10px;
+	padding: 10px;
+	z-index: 15;
+	color: #9e22ad;
+	background-color: rgba(156,156,156,0.7);
+	font-weight: bold;
+}
+
+.price {
+	display: inline;
+	position: absolute;
+	left: 180px;
+	bottom: 15px;
+	padding: 10px;
+	z-index: 15;
+	color: #9e22ad;
+	background-color: rgba(156,156,156,0.7);
+	font-weight: bold;
+}
+
+form {
+	position: relative;
+	/*top: 82px;*/
+	
+	box-sizing: border-box;
+	border: solid 3px lightblue;
+	width: 650px;
+	background-color: #eee;
+	margin: 0 auto;
+	padding: 15px 0;
+}
+
+legend {
+	display: inline;
+    font-weight: bold;
+    font-size: 24px;
+    width: 50%;
+    margin: 0 auto;
+    border: dashed magenta 9px;
+    color: red;
+}
+
+.forma {
+	display: block;
+	padding: 10px;
+	line-height: 80px;
+	border-collapse: collapse;
+
+	
+}
+
+
+
+label, input, select {
+	display: inline-block;
+	width: 24%;
+	line-height: 30px;
+	padding: 3px;
+	border-collapse: collapse;
+	text-align: left;
+	font-size: 18px;
+	outline: none;
+}
+
+
+
+label {
+	padding-left: 20px;
+	background-color: rgba(50,50,50,0.2);
+}
+
+#nup {
+	position: relative;
+	bottom: -15px;
+}
+
+input[type="submit"] {
+	background-color: orange;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+}
+
+.button {
+	position: fixed;
+	left: 95%;
+	top: 89.5%;
+}
+
+input[type="submit"]:hover {
+	background-color: red;
+	
+}
+
+@media all and (max-width: 840px) {
+	body ul div li {
+		margin: 1px 1px;
+	}
+	h1 {
+		font-size: 50px;
+	}
+	.button {
+		left: 91%;
+	}
+}
+
+@media all and (max-width: 700px) {
+	nav > ul > li {
+		font-size: 14px;
+		padding: 30px 10px;
+		}
+	.forma {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		flex-wrap:wrap;
+		}
+	#nup {
+		bottom:0px;
+		}	
+	label, input, select {
+		font-size:13px;
+		/*border: solid 0.1px;*/
+		margin: 3px;
+		}	
+}
+
+@media all and (max-width: 650px) {
+	form {
+		width: 450px;
+}
+
+	.forma {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+		margin: 0 auto;
+}
+
+	legend {
+		font-size: 20px;
+	    width: 45%;
+	}
+
+	label, input, select {
+		width: 45%;
+		text-align: center;
+		padding-left: 0;
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+}
+
+@media all and (max-width: 500px) {
+	form {
+		width: 350px;
+	}
+
+	legend {
+		font-size: 13px;
+	}
+	h1 {
+			font-size: 26px;
+		}
+	.desno {
+	display: none;
+
+	}
+	.hamburger {
+	display: inline-block;
+	z-index: 150;
+}
+}

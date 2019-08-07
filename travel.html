@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<head>
+	<title>lets_travel</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style-flex-responsive.css">
+</head>
+
+<body>
+
+	<header>
+		
+		<nav class="clearfix">
+
+			<img src=img/logo.png alt="logo" class="logo">
+
+			<ul class="desno">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Destination</a>
+					<ul class="submenu">
+						<li><a href="#">Poljska</a></li>
+						<li><a href="#">Nemacka</a></li>
+						<li><a href="#">Italija</a></li>
+						<li><a href="#">Grcka</a></li>
+						<li><a href="#">Egipat</a></li>
+						<li><a href="#">Maldivi</a></li>
+						<li><a href="#">Kina</a></li>
+						<li><a href="#">Japan</a></li>
+						<li><a href="#">Peru</a></li>
+					</ul>
+				</li>
+				<li><a href="#nup">Reservation</a></li>
+				<li><a href="#">Contact</a></li>
+
+			</ul>
+
+			<img src="img/icons8-menu-24.png" alt="hamburger" class="hamburger">
+
+		</nav>
+	</header>
+
+
+	<img src="img/main-banner.jpg" alt="main banner" class="main-banner">
+
+	<h1>HOT DESTINATIONS</h1>
+
+<!--Glavne slike -->
+
+	
+	<ul class="position">
+		<div>
+			<li>
+				<img src="img/poljska.jpg">
+				<div class="destination">
+					<p>POLJSKA</p>
+					<p>Relax</p>
+				</div>
+				<div>
+					<p class="price">650 &euro;</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/nemacka.jpg">
+				<div class="destination">
+					<p>NEMAČKA</p>
+					<p>Relax</p>
+				</div>
+				<div>
+					<p class="price">725 &euro;</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/italija.jpg">
+				<div class="destination">
+					<p>ITALIJA</p>
+					<p>Relax</p>
+				</div>
+				<div>
+					<p class="price">750 &euro;</p>
+				</div>
+			</li>
+			
+			<li>
+				<img src="img/grcka.jpg">
+				<div class="destination">
+					<p>GRČKA</p>
+					<p>Enjoy</p>
+				</div>
+				<div>
+					<p class="price">700 &euro;</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/egipat.jpg">
+				<div class="destination">
+					<p>EGIPAT</p>
+					<p>Enjoy</p>
+				</div>
+				<div>
+					<p class="price">950 &euro;</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/maldivi.jpg">
+				<div class="destination">
+					<p>MALDIVI</p>
+					<p>Enjoy</p>
+				</div>
+				<div>
+					<p class="price">1350 &euro;</p>
+				</div>
+			</li>
+	
+			<li>
+				<img src="img/kina.jpg">
+				<div class="destination">
+					<p>KINA</p>
+					<p>Adventure</p>
+				</div>
+				<div>
+					<p class="price">1600 &euro;</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/japan.jpg">
+				<div class="destination">
+					<p>JAPAN</p>
+					<p>Adventure</p>
+				</div>
+				<div>
+					<p class="price">1850 &euro;</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/peru.jpg">
+				<div class="destination">
+					<p>PERU</p>
+					<p>Adventure</p>
+				</div>
+				<div>
+					<p class="price">2100 &euro;</p>
+				</div>
+			</li>
+		</div>
+	</ul>
+
+
+<!-- FORMA -->
+
+	<form action="" method="post" align="center">
+
+		<legend>RESERVE NOW !!!</legend>
+
+		<div class="forma">
+			<label>Name</label>
+			<input type="text" name="first-name">
+		
+			<label>Last Name</label>
+			<input type="text" name="last-name">
+	
+			<label>Destination</label>
+			<select>
+				<option value="poljska">Poljska</option>
+				<option value="nemacka">Nemačka</option>
+				<option value="italija">Italija</option>
+				<option value="grcka">Grčka</option>
+				<option value="egipat">Egipat</option>
+				<option value="maldivi">Maldivi</option>
+				<option value="kina">Kina</option>
+				<option value="japan">Japan</option>
+				<option value="peru">Peru</option>
+			</select>
+
+			<label id="nup">Number of Persons</label>
+			<select>
+				<option value="one">One</option>
+				<option value="two" selected>Two</option>
+				<option value="three">Three</option>
+				<option value="four">Four</option>
+				<option value="more">More</option>
+			</select>
+		
+			<label>Date From</label>
+			<input type="date" name="datefrom">
+
+			<label>Date To</label>
+			<input type="date" name="dateto">
+
+		</div>
+		
+		
+			<input type="submit" value="Reserve Button">		
+		
+	</form>
+
+
+	
+<!-- TOP BUTTON-->	
+
+	<button class="button">
+		<a href="#"><img src="img/arrow.png"></a>
+		TOP
+		
+	</button>
+
+</body>
